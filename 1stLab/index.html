@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Donation Form</title>
 </head>
 <body>
-    <p>hi</p>
+    <h2>Donation form</h2>
+
+    <form>
+        <label for="name">Full Name</label><br/>
+        <input type="text" id="name" name="name" required ><br><br> 
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="amount">Donation</label><br>
+        <input type="number" id="amount" name="amount" min="1" required><br><br>
+
+        <label for="method">Payment Method</label><br>
+        <select name="method" id="method" required>
+        <option value="">--select--</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Debit Card">Debit Card</option>
+        <option value="UPI">UPI</option>
+        <option value="PayPal">PayPal</option>
+            </select><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
 </body>
 </html>
