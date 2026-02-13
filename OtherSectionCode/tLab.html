@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Student Registration Form</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Student Registration Page</h1>
+</head>
+
+<form>
+    
+    <label for = "StudentName">Student Name: </label>
+    <input type = "text" id = "StudentName" name = "StudentName" placeholder = "Enter Your Name">
+    <br>
+    <br>
+
+    <label for = "StudentCgpa">Student CGPA: </label>
+    <input type = "number" id = "StudentCgpa" name = "StudentCgpa" placeholder = "Enter Your CGPA">
+    <br><br>
+
+    <label for = "StudentGender">Choose Your Gender</label><br><br>
+    <label for = "MaleGender">Male</label>
+    <input type = "radio" id = "MaleGender" name = "Gender" value = "Male">
+    <br><br>
+
+   
+    <label for = "FemaleGender">Female</label>
+    <input type = "radio" id = "FemaleGender" name = "Gender" value = "Female">
+    <br><br>
+
+    <label for = "Department">Select Department: </label>
+    <select id = "Department" name = "Department">
+       <option value = "cse">CSE</option>
+       <option value="EEE">EEE</option>
+       <option value="BBA">BBA</option>
+       <option value="IPE">IPE</option>
+    </select>
+
+    <br><br>
+
+    <label for = "studentID">Student ID: </label>
+    <input type = "text" id = "studentID" name = "studentID">
+    <br><br>
+
+    <label for="Address">Address: </label>
+    <textarea id = "Address" name = "Address" rows="4" cols="20" placeholder="enter your address here"></textarea>
+    <br><br>
+
+    <label for="DOB">Date of Birth:</label>
+    <input type="date" id="DOB" name="DOB"> 
+    <br><br>
+    
+
+    <label for = "email">Email: </label>
+    <input type = "text" id = "email" name = "email" placeholder = "Enter your email">
+    <br><br>
+    
+    <label for = "gradeReport">Upload your Grade Report: </label>
+    <input type = "file" id = "gradeReport" name = "gradeReport" title = "Upload your Grade Report">
+    <br><br>
+
+    <label for = "AgreeCondition">I agree to the terms and conditions</label>
+    <input type = "checkbox" id = "AgreeCondition" name = "AgreeCondition">
+    <br><br>
+
+    <label for="phoneNumber">Phone Number</label>
+    <input type = "text" id = "phoneNumber" name = "phoneNumber" placeholder="Enter your phone number">
+    <br><br>
+    
+    <label for="sumbit">Submit your information</label>
+    <br>
+    <input type = "submit" id = "submit" name = "submit" value = "submit">
+
+</form>
+
+</html>
