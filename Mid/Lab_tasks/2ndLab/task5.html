@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Part A: Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Profile - Bipro</title>
+    <meta name="description" content="Personal academic profile showcasing education, biography, and contact information for internship or academic review.">
+    <meta name="keywords" content="Academic Profile, Computer Science, AIUB, Internship, Web Technologies">
+    <meta name="author" content="Bipro">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Bipro</h1>
+        <p>Computer Science Student | Web Technologies Enthusiast</p>
+
+        <!-- Navigation -->
+        <nav>
+                <a href="#biography">Biography  </a>
+                <a href="#education">Education   </a>
+                <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Biography Section -->
+        <section id="biography">
+            <h2>Biography</h2>
+            <p>
+                I am a dedicated Computer Science student at American International University-Bangladesh (AIUB).
+                I am passionate about Web Development, Artificial Intelligence, and Machine Learning.
+                I continuously work on improving my technical skills and building real-world projects.
+            </p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+
+            <!-- Education Table -->
+            <table border="1">
+                <caption>Academic Qualifications</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Degree</th>
+                        <th scope="col">Institution</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Result</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>BSc in Computer Science</td>
+                        <td>American International University-Bangladesh (AIUB)</td>
+                        <td>2023 - Present</td>
+                        <td>CGPA: 3.50 (Current)</td>
+                    </tr>
+                    <tr>
+                        <td>Higher Secondary Certificate (HSC)</td>
+                        <td>Gaokhali College</td>
+                        <td>2022</td>
+                        <td>GPA: 5.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <!-- Advanced Contact Form -->
+            <form action="#" method="post">
+
+                <!-- Name -->
+                <p>
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" 
+                           placeholder="Enter your full name" 
+                           required maxlength="50">
+                </p>
+
+                <!-- Email -->
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" 
+                           placeholder="example@email.com" 
+                           required maxlength="100">
+                </p>
+
+                <!-- Phone -->
+                <p>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="01XXXXXXXXX"
+                           pattern="[0-9]{11}"
+                           maxlength="11">
+                </p>
+
+                <!-- Message -->
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message"
+                              placeholder="Write your message here..."
+                              required maxlength="300"></textarea>
+                </p>
+
+                <!-- Submit Button -->
+                <p>
+                    <input type="submit" value="Send Message">
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact: roybipro896@gmail.com.com</p>
+        <p>&copy; 2026 Bipro. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
