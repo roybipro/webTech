@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Student Information</h1>
+    </header>
+
+    <main>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" required><br><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" required><br><br>
+
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" required><br><br>
+
+                <label for="date">Date Of Birth</label><br>
+                <input type="text" name="date" id="date" required><br><br>
+
+               <span>Gender</span><br>
+               <input type="radio" name="gender" id="male" value="male" required>
+               <label for="male">Male</label><br>
+               <input type="radio" name="gender" id="female" value="female" required>
+               <label for="female">Female</label><br><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Academic</legend>
+
+                <label for="department">Department</label>
+                <select name="department" id="department">
+                    <option value="cse">CS</option>
+                    <option value="english">English</option>
+                    <option value="bba">BBA</option>
+                    <option value="law">Law</option>
+                </select><br><br>
+
+                <span>Skills</span><br>
+                <label for="html">HTML</label>
+                <input type="checkbox" name="html" id="html" required>
+                <label for="css">CSS</label>
+                <input type="checkbox" name="css" id="css" required>
+                <label for="js">JS</label>
+                <input type="checkbox" name="js" id="js" required>
+                <label for="react">React</label>
+                <input type="checkbox" name="react" id="react" required>
+            </fieldset>
+            <br><br>
+
+            <!-- Form Controls -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+            
+
+        </form>
+
+    </main>
+</body>
+</html>
