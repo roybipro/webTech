@@ -1,0 +1,59 @@
+/* Basic page styling */
+body {
+font-family: Arial, sans-serif;
+background-color: #f5f5f5;
+padding: 20px;
+}
+/* Heading */
+h1 {
+text-align: center;
+}
+/* Form styling */
+form {
+margin-bottom: 20px;
+text-align: center;
+}
+input[type="text"] {
+padding: 8px;
+width: 200px;
+}
+button {
+padding: 8px 12px;
+margin-left: 5px;
+cursor: pointer;
+}
+/* Student list styling */
+#student-list {
+list-style-type: none;
+padding: 0;
+max-width: 400px;
+margin: 0 auto;
+}
+.student-item {
+background-color: #ffffff;
+padding: 10px;
+margin-bottom: 8px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border: 1px solid #ddd;
+}
+.student-item span {
+flex: 1;
+}
+/* Edit and delete buttons */
+.btn-edit {
+background-color: #4caf50;
+color: white;
+border: none;
+}
+.btn-delete {
+background-color: #f44336;
+color: white;
+border: none;
+margin-left: 5px;
+}
+/* Highlight style for students */
+.highlight {
+background-color: yellow;
+}
