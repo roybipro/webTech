@@ -20,12 +20,21 @@
               <a href="#"> RoyBipro<span>.dev</span> </a>
             </div>
 
-        <nav >
-            <a href="#about">Who am I?</a>
+        <nav class="main-nav" aria-label="Primary">
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-menu" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <div class="nav-links" id="primary-menu">
+                <a href="#about">Who am I?</a>
                 <a href="#">Projects</a>
                 <a href="#">Blog</a>
                 <a href="#">Contact</a>
-                <i class="fa-solid fa-sun"></i>
+            </div>
+
+            <button class="theme-toggle" type="button" aria-label="Switch to light mode">
+                <i class="fa-solid fa-sun" aria-hidden="true"></i>
+            </button>
         </nav>
      </header>
      <main>
@@ -68,9 +77,47 @@
         </section>
         <!-- Who am I? -->
         <section id="about">
-            <h2>Who am I?</h2>
-            <p>I am a passionate student interested in AI ML ,web development and programming.</p>
+            <h2 class="section-title">Who am I?</h2>
+
+            <div class="about-container">
+                <div class="about-left">
+                    <img src="./images/my-photo.jpg" alt="Roy Bipro" class="about-image">
+                </div>
+
+                <div class="about-right">
+                    <p class="about-description">With 4+ years of comprehensive experience in web application development, I have polished my skills in both frontend and backend development. In addition to my hands-on experience in web development, my education has also played a critical role in providing a strong foundation for my career.</p>
+
+                    <p class="about-intro">Here is my educational background.</p>
+
+                    <div class="education-item">
+                        <h3>B.Sc (Hons) in Computer Science</h3>
+                        <p class="education-meta">American International University - Bangladesh (AIUB) | 2023-3 ~ 2027-1</p>
+                        <ul>
+                            <li>Studied computer science</li>
+                            <li>CGPA: 3.5</li>
+                        </ul>
+                    </div>
+
+                    <div class="education-item">
+                        <h3>HSC in Science</h3>
+                        <p class="education-meta">Gaokhali School and College | 2020 ~ 2022</p>
+                        <ul>
+                            <li>Studied modules in Science</li>
+                            <li>Passed HSC with overall Merit GPA : 5.00</li>
+                        </ul>
+                    </div>
+
+                    <div class="education-item">
+                        <h3>IELTS</h3>
+                        <p class="education-meta">British Council | 2027</p>
+                        <ul>
+                            <li>Got overall band score 6.5.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
      </main>
+    <script src="index.js" defer></script>
 </body>
 </html>
