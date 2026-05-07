@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Library Management</title>
+</head>
+<body>
+    <header align="center">
+        <h1>University Library Management</h1>
+        <p>Manage book records with PHP, MySQL, MVC, and AJAX.</p>
+    </header>
+
+    <hr>
+
+    <main>
+        <table width="100%" cellpadding="12" cellspacing="0">
+            <tr valign="top">
+                <td width="32%">
+                    <fieldset>
+                        <legend><h2 id="form-title">Add Book</h2></legend>
+
+                        <form id="book-form">
+                            <input type="hidden" id="book-id">
+
+                            <table width="100%" cellpadding="6" cellspacing="0">
+                                <tr>
+                                    <td><label for="title">Book Title</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" id="title" size="35" required></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="author">Author Name</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" id="author" size="35" required></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="category">Category</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" id="category" size="35" required></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="status">Availability Status</label></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select id="status" required>
+                                            <option value="Available">Available</option>
+                                            <option value="Checked Out">Checked Out</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <button type="submit" id="save-btn">Save Book</button>
+                                        <button type="button" id="reset-btn">Clear</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </fieldset>
+                </td>
+
+                <td>
+                    <fieldset>
+                        <legend><h2>Book Records</h2></legend>
+
+                        <p id="record-count">Loading records...</p>
+
+                        <table width="100%" cellpadding="6" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <input type="search" id="search" placeholder="Search title or author" size="28">
+                                    <select id="filter-category">
+                                        <option value="">All Categories</option>
+                                    </select>
+                                    <select id="filter-status">
+                                        <option value="">All Statuses</option>
+                                        <option value="Available">Available</option>
+                                        <option value="Checked Out">Checked Out</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <br>
+
+                        <table border="1" width="100%" cellpadding="8" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Title</th>
+                                    <th>Author</th>
+                                    <th>Category</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="book-table-body"></tbody>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <br>
+    <div id="message" aria-live="polite"></div>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

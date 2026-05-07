@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Learning Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>My Learning Portal</h1>
+</header>
+
+<main>
+    <fieldset class="panel">
+        <legend>Course Enrollment Panel</legend>
+
+        <p><strong>Course:</strong> JavaScript Basics</p>
+        <p><strong>Fee per seat:</strong> 1000 Tk</p>
+
+        <label for="seats">Number of Seats:</label>
+        <input type="number" id="seats" value="1" min="1">
+
+        <p id="error" class="error"></p>
+
+        <p>Total Course Fee: <span id="courseTotal">1000</span> Tk</p>
+        <p id="discountMsg" class="discount"></p>
+    </fieldset>
+
+    <fieldset class="panel">
+        <legend>Enrollment Details Form</legend>
+        <form id="enrollmentForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Contact Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="classType">Class Type:</label>
+            <select id="classType">
+                <option value="online">Online Class</option>
+                <option value="campus">On-Campus Class</option>
+            </select>
+
+            <p>Final Payable Amount: <span id="finalAmount">1100</span> Tk</p>
+
+            <label class="confirm-label">
+                <input type="checkbox" id="confirm">
+                I confirm my enrollment details are correct
+            </label>
+
+            <p id="formError" class="error"></p>
+            <button id="submitBtn" type="submit">Submit</button>
+        </form>
+    </fieldset>
+</main>
+
+<footer>
+    All Rights Reserved 2026
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
